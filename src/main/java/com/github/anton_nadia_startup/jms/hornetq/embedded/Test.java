@@ -22,12 +22,12 @@ public class Test extends TestCase {
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageProducer producer = session.createProducer(ServerUtils.getQueue());
             TextMessage message = session.createTextMessage("Hello sent at " + new Date());
-            System.out.println("Sending message: " + message.getText());
+            System.out.println("\n\nSending message: " + message.getText() + "\n\n");
             producer.send(message);
             MessageConsumer messageConsumer = session.createConsumer(ServerUtils.getQueue());
             connection.start();
             TextMessage messageReceived = (TextMessage) messageConsumer.receive(1000);
-            System.out.println("Received message:" + messageReceived.getText());
+            System.out.println("Received message:" + messageReceived.getText() + "\n\n");
         } finally {
             if (connection != null) {
                 connection.close();
