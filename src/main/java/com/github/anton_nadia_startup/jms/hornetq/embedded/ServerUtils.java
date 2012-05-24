@@ -1,4 +1,4 @@
-package yell13.maven.ee.hornetq.embedded;
+package com.github.anton_nadia_startup.jms.hornetq.embedded;
 
 import org.hornetq.jms.server.embedded.EmbeddedJMS;
 
