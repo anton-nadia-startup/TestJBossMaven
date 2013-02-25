@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jstl/core">
+<head>
+    <title>Add new post</title>
+</head>
+<body>
+
+    <h:form>
+        <!--<h:panelGrid columns="2">-->
+            <!--<ui:repeat value="#{postsStub.posts}" var="post">-->
+                <!--<h:outputText value="#{post.subject}"/>-->
+                <!--<h:outputText value="#{post.body}"/>-->
+            <!--</ui:repeat>-->
+        <!--</h:panelGrid>-->
+
+        <h:dataTable var="post" value="#{postsStub.posts}" border="1">
+            <h:column>
+                <h:outputText value="#{post.subject}"/>
+                <h:outputText value="#{post.body}"/>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+
+
+</body>
+</html>
