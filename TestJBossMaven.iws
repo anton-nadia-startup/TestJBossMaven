@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4010c105-2b69-4a83-947c-b67f230fa9aa" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\README.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\jboss-as-helloworld.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\src\main\java\org\jboss\as\quickstarts\helloworld\HelloService.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\src\main\java\org\jboss\as\quickstarts\helloworld\HelloWorldServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\src\main\webapp\WEB-INF\beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\src\main\webapp\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\helloworld\target\jboss-as-helloworld.war" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jdbc\DAO.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jdbc\Test.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jdbc\requests\InsertRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jdbc\requests\RemoveRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jdbc\requests\Request.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jdbc\requests\SelectRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jms\hornetq\embedded\ServerUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\java\com\github\anton_nadia_startup\jms\hornetq\embedded\Test.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\resources\hornetq-configuration.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\resources\hornetq-jms.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\github\TestJBossMaven\src\main\resources\hornetq-users.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestJBossMaven.iml" afterPath="$PROJECT_DIR$/TestJBossMaven.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestJBossMaven.ipr" afterPath="$PROJECT_DIR$/TestJBossMaven.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestJBossMaven.iws" afterPath="$PROJECT_DIR$/TestJBossMaven.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="MavenEE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -210,6 +188,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="TestJBossMaven" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
