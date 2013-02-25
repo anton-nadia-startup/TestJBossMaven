@@ -15,7 +15,18 @@
       <entry name="?*.tld" />
       <entry name="?*.ftl" />
     </wildcardResourcePatterns>
-    <annotationProcessing enabled="false" useClasspath="true" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="TestJBossMaven" />
+      </profile>
+    </annotationProcessing>
   </component>
   <component name="CopyrightManager" default="">
     <module2copyright />
@@ -164,7 +175,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MavenEE.iml" filepath="$PROJECT_DIR$/MavenEE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestJBossMaven.iml" filepath="$PROJECT_DIR$/TestJBossMaven.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
@@ -174,152 +185,7 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
-  </component>
-  <component name="libraryTable">
-    <library name="Maven: junit:junit:4.10">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: mysql:mysql-connector-java:5.1.6">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hamcrest:hamcrest-core:1.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hornetq:hornetq-core-client:2.2.13.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-core-client/2.2.13.Final/hornetq-core-client-2.2.13.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-core-client/2.2.13.Final/hornetq-core-client-2.2.13.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-core-client/2.2.13.Final/hornetq-core-client-2.2.13.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hornetq:hornetq-core:2.2.13.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-core/2.2.13.Final/hornetq-core-2.2.13.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-core/2.2.13.Final/hornetq-core-2.2.13.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-core/2.2.13.Final/hornetq-core-2.2.13.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hornetq:hornetq-jms-client:2.2.13.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-jms-client/2.2.13.Final/hornetq-jms-client-2.2.13.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-jms-client/2.2.13.Final/hornetq-jms-client-2.2.13.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-jms-client/2.2.13.Final/hornetq-jms-client-2.2.13.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hornetq:hornetq-jms:2.2.13.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-jms/2.2.13.Final/hornetq-jms-2.2.13.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-jms/2.2.13.Final/hornetq-jms-2.2.13.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-jms/2.2.13.Final/hornetq-jms-2.2.13.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hornetq:hornetq-ra:2.2.13.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-ra/2.2.13.Final/hornetq-ra-2.2.13.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-ra/2.2.13.Final/hornetq-ra-2.2.13.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-ra/2.2.13.Final/hornetq-ra-2.2.13.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hornetq:hornetq-resources:2.2.13.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-resources/2.2.13.Final/hornetq-resources-2.2.13.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-resources/2.2.13.Final/hornetq-resources-2.2.13.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-resources/2.2.13.Final/hornetq-resources-2.2.13.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.hornetq:hornetq-transports:2.0.0.GA">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-transports/2.0.0.GA/hornetq-transports-2.0.0.GA.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-transports/2.0.0.GA/hornetq-transports-2.0.0.GA-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/hornetq/hornetq-transports/2.0.0.GA/hornetq-transports-2.0.0.GA-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.jboss.netty:netty:3.2.0.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/netty/netty/3.2.0.Final/netty-3.2.0.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/netty/netty/3.2.0.Final/netty-3.2.0.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/netty/netty/3.2.0.Final/netty-3.2.0.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.jboss.spec.javax.jms:jboss-jms-api_1.1_spec:1.0.1.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/jms/jboss-jms-api_1.1_spec/1.0.1.Final/jboss-jms-api_1.1_spec-1.0.1.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/jms/jboss-jms-api_1.1_spec/1.0.1.Final/jboss-jms-api_1.1_spec-1.0.1.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/jms/jboss-jms-api_1.1_spec/1.0.1.Final/jboss-jms-api_1.1_spec-1.0.1.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.projectlombok:lombok:0.11.0">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/0.11.0/lombok-0.11.0.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/0.11.0/lombok-0.11.0-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/0.11.0/lombok-0.11.0-sources.jar!/" />
-      </SOURCES>
-    </library>
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
 

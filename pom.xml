@@ -7,78 +7,9 @@
     <groupId>TestJBossMaven</groupId>
     <artifactId>TestJBossMaven</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
 
     <dependencies>
-        <!--MySQL connection-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.6</version>
-        </dependency>
-
-        <!--HornetQ-->
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-core</artifactId>
-            <version>2.2.13.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-jms</artifactId>
-            <version>2.2.13.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-jms-client</artifactId>
-            <version>2.2.13.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-core-client</artifactId>
-            <version>2.2.13.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-transports</artifactId>
-            <version>2.0.0.GA</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-resources</artifactId>
-            <version>2.2.13.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-ra</artifactId>
-            <version>2.2.13.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.netty</groupId>
-            <artifactId>netty</artifactId>
-            <version>3.2.0.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.spec.javax.jms</groupId>
-            <artifactId>jboss-jms-api_1.1_spec</artifactId>
-            <version>1.0.1.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>0.11.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.10</version>
-        </dependency>
 
     </dependencies>
 
@@ -90,9 +21,12 @@
                 <artifactId>jboss-maven-plugin</artifactId>
                 <version>1.5.0</version>
                 <configuration>
+                    <deployUrlPath>test</deployUrlPath>
                     <!--jbossHome>/usr/jboss-4.2.3.GA</jbossHome-->
                     <serverName>all</serverName>
-                    <fileName>target/my-project.war</fileName>
+                    <fileNames>
+                        <fileName>target/TestJBossMaven-1.0.jar</fileName>
+                    </fileNames>
                 </configuration>
             </plugin>
         </plugins>
