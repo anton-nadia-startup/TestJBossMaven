@@ -7,17 +7,15 @@
 <head>
     <title>Add new post</title>
 </head>
-<body>
+    <body>
 
-    <h:form>
-        <h:inputText value="#{addHandler.subject}" required="true" size="30"/>
-        <br/>
-        <h:inputTextarea value="#{addHandler.body}" required="true" size="30"/>
-        <br/>
-        <h:commandButton value="Add" action="#{addHandler.add}"/>
-        <br/>
-        <h:commandButton value="Add hardcoded" action="#{addHandler.addHardcodedPost}" hidden="true"/>
-    </h:form>
+        <h:form>
+            <h:inputText value="#{addPostHandler.subject}" required="true" size="30"/>
+            <br/>
+            <h:inputTextarea value="#{addPostHandler.text}" required="true" size="30"/>
+            <br/>
+            <h:commandButton value="Add" action="#{addPostHandler.addPost}"/>
+        </h:form>
 
-</body>
+    </body>
 </html>
