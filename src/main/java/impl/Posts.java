@@ -1,4 +1,6 @@
-package interfaces;
+package impl;
+
+import beans.Post;
 
 import java.util.List;
 

@@ -7,7 +7,10 @@
     <groupId>TestJBossMaven</groupId>
     <artifactId>TestJBossMaven</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>DroolsLearn</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <dependencies>
 

@@ -1,6 +1,6 @@
 package jsf;
 
-import impl.PostImpl;
+import beans.PostImpl;
 import impl.PostsStub;
 
 import javax.faces.bean.ManagedBean;

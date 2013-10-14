@@ -1,4 +1,4 @@
-package interfaces;
+package beans;
 
 /**
  * User: Anton Krupnov

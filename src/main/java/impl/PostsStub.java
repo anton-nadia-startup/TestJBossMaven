@@ -1,7 +1,7 @@
 package impl;
 
-import interfaces.Post;
-import interfaces.Posts;
+import beans.Post;
+import beans.PostImpl;
 
 //import javax.enterprise.context.ApplicationScoped;
 import javax.faces.bean.ApplicationScoped;
@@ -23,7 +23,7 @@ public class PostsStub implements Posts {
         posts.add(new PostImpl("First post", "First post body"));
         posts.add(new PostImpl("Second post", "Second post body"));
 
-        System.out.println("interfaces.Posts init end");
+        System.out.println("impl.Posts init end");
     }
 
     @Override
@@ -33,7 +33,7 @@ public class PostsStub implements Posts {
     }
 
     public void addPost(Post post) {
-        System.out.println("interfaces.Post added: " + post);
+        System.out.println("beans.Post added: " + post);
         posts.add(post);
     }
 

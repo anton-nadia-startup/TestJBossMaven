@@ -1,0 +1,33 @@
+
+import temp.items.parameters.Season;
+import temp.items.parameters.Activity;
+import temp.items.parameters.StringParameter;
+import temp.items.ItemImpl
+import temp.requests.RequestImpl
+
+rule "Season match"
+    when
+        $request: RequestImpl()
+        $season: Season() from $request.getParameters()
+        $items: ItemImpl(this.parameters contains $season)
+    then
+        System.out.println($items);
+end
+
+rule "Activity match"
+    when
+        $request: RequestImpl()
+        $activity: Activity() from $request.getParameters()
+        $items: ItemImpl(this.parameters contains $activity)
+    then
+        System.out.println($items);
+end
+
+rule "String parameter match"
+    when
+        $request: RequestImpl()
+        $stringParam: StringParameter() from $request.getParameters()
+        $items: ItemImpl(this.parameters contains $stringParam)
+    then
+        System.out.println($items);
+end

@@ -1,6 +1,6 @@
 package servlet;
 
-import interfaces.Post;
+import beans.Post;
 import impl.PostsStub;
 
 import javax.inject.Inject;

@@ -1,6 +1,4 @@
-package impl;
-
-import interfaces.Post;
+package beans;
 
 /**
  * User: Anton Krupnov

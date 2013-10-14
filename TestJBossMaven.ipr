@@ -14,6 +14,7 @@
       <entry name="?*.dtd" />
       <entry name="?*.tld" />
       <entry name="?*.ftl" />
+      <entry name="*.drl" />
     </wildcardResourcePatterns>
     <annotationProcessing enabled="false" useClasspath="true" />
   </component>
@@ -158,12 +159,14 @@
   <component name="ProjectDictionaryState">
     <dictionary name="yell13">
       <words>
+        <w>itms</w>
         <w>krupnov</w>
       </words>
     </dictionary>
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DroolsLearn/DroolsLearn.iml" filepath="$PROJECT_DIR$/DroolsLearn/DroolsLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestJBossMaven.iml" filepath="$PROJECT_DIR$/TestJBossMaven.iml" />
     </modules>
   </component>
@@ -177,6 +180,17 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
+    <library name="Maven: antlr:antlr:2.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: javax.inject:javax.inject:1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
@@ -199,6 +213,105 @@
         <root url="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/6.0/javaee-web-api-6.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: junit:junit:4.8.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.antlr:antlr-runtime:3.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr-runtime/3.3/antlr-runtime-3.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr-runtime/3.3/antlr-runtime-3.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr-runtime/3.3/antlr-runtime-3.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.antlr:antlr:3.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr/3.3/antlr-3.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr/3.3/antlr-3.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr/3.3/antlr-3.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.antlr:stringtemplate:3.2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.drools:drools-compiler:5.4.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/drools-compiler/5.4.0.Final/drools-compiler-5.4.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/drools-compiler/5.4.0.Final/drools-compiler-5.4.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/drools-compiler/5.4.0.Final/drools-compiler-5.4.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.drools:drools-core:5.4.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/drools-core/5.4.0.Final/drools-core-5.4.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/drools-core/5.4.0.Final/drools-core-5.4.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/drools-core/5.4.0.Final/drools-core-5.4.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.drools:knowledge-api:5.4.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/knowledge-api/5.4.0.Final/knowledge-api-5.4.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/knowledge-api/5.4.0.Final/knowledge-api-5.4.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/knowledge-api/5.4.0.Final/knowledge-api-5.4.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.drools:knowledge-internal-api:5.4.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/knowledge-internal-api/5.4.0.Final/knowledge-internal-api-5.4.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/knowledge-internal-api/5.4.0.Final/knowledge-internal-api-5.4.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/drools/knowledge-internal-api/5.4.0.Final/knowledge-internal-api-5.4.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.eclipse.jdt.core.compiler:ecj:3.5.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jdt/core/compiler/ecj/3.5.1/ecj-3.5.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jdt/core/compiler/ecj/3.5.1/ecj-3.5.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jdt/core/compiler/ecj/3.5.1/ecj-3.5.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.jboss.spec.javax.faces:jboss-jsf-api_2.0_spec:1.0.0.Final">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/faces/jboss-jsf-api_2.0_spec/1.0.0.Final/jboss-jsf-api_2.0_spec-1.0.0.Final.jar!/" />
@@ -219,6 +332,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/servlet/jboss-servlet-api_3.0_spec/1.0.0.Final/jboss-servlet-api_3.0_spec-1.0.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mvel:mvel2:2.1.0.drools16">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mvel/mvel2/2.1.0.drools16/mvel2-2.1.0.drools16.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mvel/mvel2/2.1.0.drools16/mvel2-2.1.0.drools16-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mvel/mvel2/2.1.0.drools16/mvel2-2.1.0.drools16-sources.jar!/" />
       </SOURCES>
     </library>
   </component>
